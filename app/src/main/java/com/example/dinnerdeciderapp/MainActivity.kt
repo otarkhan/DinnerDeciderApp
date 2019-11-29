@@ -34,12 +34,14 @@ class MainActivity : AppCompatActivity() {
 //        val button = findViewById<Button>(R.id.button)
 
         button.setOnClickListener {
-            textView.text = getRandom();
+            food.add(editText.text.toString());
         }
 
         button2.setOnClickListener {
-            food.add(editText.text.toString());
+            textView.text = getRandom();
         }
+
+
     }
 
 

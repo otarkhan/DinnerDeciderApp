@@ -10,36 +10,42 @@
         android:id="@+id/textView"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/dd_logo"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="98dp" />
+        android:layout_marginTop="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="116dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="72dp"
         android:text="Add food"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="405dp"
         android:layout_height="35dp"
-        android:text="Button"
+        android:text="DECIDE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,10 +54,14 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
         android:ems="10"
+        android:hint="Add new food"
         android:inputType="textPersonName"
-        android:text="Add new food"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="359dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
